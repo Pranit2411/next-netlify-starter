@@ -1,0 +1,159 @@
+.heading h2
+{
+    font-size: 3rem;
+    background-color: #33B689;
+    background-image: #33B689;
+    background-size: 100%;
+    -webkit-background-clip: text;           /*To make the text transparent*/
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    margin-top: 50px;
+}
+
+
+#login_btn
+{
+    font-size: 1rem;
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+
+
+
+
+/* Code of Styles.css */
+*{
+    box-sizing :border-box;
+    margin :0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: #ffffff;            /* To set the nav bar color */
+    height : 80px;                    /* To set nav bar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position:sticky;                 /*To specify the type of nav baar fixed or static */
+    top : 0;
+    z-index: 999;
+}
+.navbar__container{
+
+display : flex;
+justify-content:space-between;
+height: 80px;
+z-index:1;
+width:100%;
+max-width:1300px;                  /*To set box width where the tabs are present*/
+margin :0 auto;
+padding : 0 10px;
+}
+#navbar__logo
+{
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #0ba360 0%, #00ff0d 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;           /*To make the text transparent*/
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items:center;
+    cursor:  pointer;
+
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+.navbar__menu{                          /* Aligns the menu items */
+    display: flex;
+    align-items:center;
+    list-style:none;
+}
+.navbar__item{
+    height:80px;                    /*To set the height of the tabs*/
+}
+.navbar__links{
+    color: #000000;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.navbar__btn{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 1rem;
+width:100%;
+}
+.navbar__btn:hover{               /*To create hovering animation for first 3 tabs*/
+    color: #000000;
+    transition: all 0.3s ease;
+}
+.navbar__container span1{
+    /* background: #fdfc47; fallback for old browsers */
+    background-image: linear-gradient(to right, #000000 0%, #606060 100%);
+    background: -webkit-linear-gradient(to right, #fdfc47, #24fe41); /* Chrome 10-25, Safari 5.1-6 */
+  /* background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%); */
+      
+  -webkit-background-clip: text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+  }
+  .button{                                /*For Login button*/
+    /* font-size: 2.5rem; */
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    /* padding : 20px 25px; */
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    margin-left: 0px;
+    cursor: pointer;
+    position : relative;
+    transition: 0.35s ;
+    outline : none;
+    text-align: center;
+}
+.navbar__links:hover{               /*To create hovering animation for first 3 tabs*/
+    color: #0ba360;
+    transition: all 0.3s ease;
+}
+
+.main__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin : 0 auto;
+    height: 90%;
+    z-index:1;
+    width:100%;
+    max-width: 1300px;
+    padding : 0 50px;
+
+}
+.main__content
+{
+    color: #fff;
+    width :100%;
+}
+
+#LoginSignUpImage
+{
+    margin-top: 50px;
+    height: 500px;
+
+}

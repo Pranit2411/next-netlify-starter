@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS_Styles_PrintPage.css">
+  <title>TransformerGo Print</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+
+<body>
+  
+  <div class="PageSize">
+    <h1>Design Sheet</h1>
+    <h3>Electrical Supply : <span id="ForVoltRat"></span> KV PT <span id="ForType"></span></h3>
+    <table class="table1">
+      
+      <br>
+      
+      <tr>
+        <td>
+          <p><center>Burden : <span id="ForBurden"></span> VA</center></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><center>Class : <span id="ForclassType"></span></center></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><center>STC : <span id="ForSTC"></span> KA/1sec</center></p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <table class="table2" style="width: 600px; ">
+      
+      <tr>
+        <td>1</td>
+        <td>Cross Section Area </td>
+        <td><span id="Forcross"></span> sq. mm</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Width of Wire </td>
+        <td><span id="Forwirelen"></span> mm</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>insulation On Core</td>
+        <td><span id="ForInsulationOnCore"></span> Layers of Crepe Paper </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Number of Layers</td>
+        <td><span id="ForNumOfLayers"></span> Layers</td>
+      </tr>
+      
+      
+
+    </table>
+    <button onclick="print()" class="pointer-link" style="margin-left: 100mm; margin-top: 5mm;">Print</button>
+  </div>
+  <script>//To read values form local storage
+    document.getElementById("ForType").innerHTML = localStorage.getItem("Type");
+    document.getElementById("ForVoltRat").innerHTML = localStorage.getItem("VoltRat");
+    document.getElementById("ForBurden").innerHTML = localStorage.getItem("Burden");
+    document.getElementById("ForclassType").innerHTML = localStorage.getItem("ClassType");
+    document.getElementById("ForSTC").innerHTML = localStorage.getItem("STC");
+    document.getElementById("Forcross").innerHTML = localStorage.getItem("cross");
+    document.getElementById("Forwirelen").innerHTML = localStorage.getItem("wirelen");
+    document.getElementById("ForInsulationOnCore").innerHTML = localStorage.getItem("InsulationOnCore");
+    document.getElementById("ForNumOfLayers").innerHTML = localStorage.getItem("NumOfLayers");
+
+
+  </script>
+</body>
+
+</html>

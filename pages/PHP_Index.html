@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TransformerGo</title>
+  <link rel="stylesheet" href="CSS_Home_Style.css">
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <style>
+    .pointer-link {
+    cursor: pointer;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Section-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <!--Anchor Tags -->
+      <a value="ASSIGN" onclick="location.assign('PHP_Index.html')" id="navbar__logo"><Strong><em>Transformer<span1>Go</span1></em></Strong></a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links" id="about-page">About</a>
+        </li>
+
+        <li class="navbar__btn">
+          <a value="ASSIGN" onclick="location.assign('PHP_Logout.php')" class="button pointer-link" id="login">Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!--Hero Section-->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">
+        <span1>Choose</span1> your <br><span>Type</span>
+      </h1>
+      <!--p class="hero__description">Click here to view Subjects</p-->
+      <div class="subjects__wrapper">
+
+        <!--p>Text </p-->
+        <div><a href="PHP_InputCT.html"><button class="main__btn">Current Transformer</button></a></div>
+
+        <!--p>Text </p-->
+        <div><a href="PHP_InputPT.html"><button class="main__btn">Potential Transformer</button></a></div>
+
+
+      </div>
+      <button class="button" id="back_btn"><a href="PHP_Login.php">Back</a></button>
+    </div>
+  </div>
+
+
+
+  <!-- About Section -->
+  <div class="main" id="about">
+    <div class="main__container">
+      <div class="main__img--container">
+        <div class="main__img--card">
+          <div class="logo">
+            <img id="HomeImage" src="HomeTransImag.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="main__content">
+        <h1>What does our website provide?</h1>
+        <h2>Computation of Current Transformer and Potential Transformer Parameters. <br>We also provide </h2>
+        <p>• Prediction of Phase Error and Ratio Error.<br>
+          • 3D Model</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="choose_type.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Input for Potential Transformer</title>
+    <script src="JS_Computation.js"></script>
+    <link rel="stylesheet" href="CSS_Main_Style.css">
+    <link rel="stylesheet" href="CSS_Styles_PT.css">
+
+    
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <!--Anchor Tags -->
+            <a value="ASSIGN" onclick="location.assign('HTML_Index.html')" id="navbar__logo"><Strong><em>Transformer
+                        <span1>Go</span1></em></Strong></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a value="ASSIGN" onclick="location.assign('HTML_Index.html')" class="navbar__links pointer-link"
+                        id="home-page">Home</a>
+                </li>
+
+
+                <li class="navbar__btn">
+                    <a value="ASSIGN" onclick="location.assign('HTML_Login.html')" class="button pointer-link"
+                        id="login">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="heading">
+        <h2>Inputs for Potential Transformer</h2>
+    </div>
+    <form class="InputBox">
+
+        <div class="form-group">
+            <div id="Types">
+                <input type="radio" id="t1" name="type" value="Oil Cooled" required> Oil Cooled &nbsp; &nbsp;
+                <input type="radio" id="t2" name="type" value="Epoxy/Dry " required> Epoxy/Dry
+            </div>
+            <br>
+
+            <label for="burden" class="Labels">Burden </label>
+            <select name="burden" id="burden" required>
+                <option value="select">--Select--</option>
+                <option value="30">30 VA</option>
+                <option value="40">40 VA</option>
+                <option value="50">50 VA</option>
+                <option value="60">60 VA</option>
+                <option value="70">70 VA</option>
+                <option value="80">80 VA</option>
+                <option value="90">90 VA</option>
+                <option value="100">100 VA</option>
+
+            </select>
+            <br>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="voltage-rating" class="Labels">Voltage Rating</label>
+                <select name="voltage-rating" id="voltage-rating" required>
+                    <option value="select">--Select--</option>
+                    <option value="11">11 kV</option>
+                    <option value="22">22 kV</option>
+                    <option value="33">33 kV</option>
+                </select>
+            </div>
+
+            <br><br>
+
+
+            <label for="class" class="Labels">Class</label>
+            <select name="class" id="class-type" required>
+                <option value="select">--Select--</option>
+                <option value="0.1">0.1</option>
+                <option value="0.2">0.2</option>
+                <option value="0.3">0.3</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="0.2S">0.2S</option>
+                <option value="0.5S">0.5S</option>
+            </select>
+        </div>
+
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="stc" class="Labels">Short Time Current</label>
+            <select name="stc" id="stc" required>
+                <option value="select">--Select--</option>
+                <option value="3">3 kA/sec</option>
+                <option value="6.7">6.7 kA/sec</option>
+                <option value="13.1">13.1 kA/sec</option>
+                <option value="26.2">26.2 kA/sec</option>
+                <option value="31.1">31.1 kA/sec</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="voltage-factor" class="Labels">Voltage factor</label>
+            <select name="voltage-factor" id="voltage-factor" required>
+                <option value="select">--Select--</option>
+                <option value="100">1</option>
+                <option value="200">2</option>
+                <option value="400">3</option>
+                <option value="800">4</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div class="wrapper">
+            <a value="ASSIGN" onclick="location.assign('HTML_Index.html')" class="button pointer-link"
+                id="btns">Back</a>
+
+            <a onclick="calculateForPT()" class="button pointer-link" id="btns">Compute</a>
+            
+        </div>
+
+        <br><br>
+    </form>
+
+    <div class="wrapper" style="margin-top: 150px;">
+        <div>
+            <div class="heading">
+                <h2>Output for Potential Transformer</h2>
+            </div>
+            <form class="OutputBox" action="HTML_PrintPagePT.html">
+                <label id="coresize"></label>
+                <br><br>
+                <label id="insulationOnCore"></label>
+                <br><br>
+                <label id="crossectionForPrimary"></label>
+                <br><br>
+                <label id="n1"></label>
+                <br><br>
+                <label id="crossectionForSecondary"></label>
+                <br><br>
+                <label id="n2"></label>
+                <br><br>
+                <label id="lengthOfPrimary"></label>
+                <br><br>
+                <label id="insulationOnPrimary"></label>
+                <br><br>
+                <input class="button pointer-link" id="printbtn" style="margin-left: 190px;" type="submit" value="Print"
+                    onclick="passvalues()" />
+            </form>
+        </div>
+        <div id="3d-model">
+            <div class="heading">
+                <h2>3D Model - epoxy dry</h2>
+            </div>
+            <div class="row">
+                <div class="sketchfab-embed-wrapper"> <iframe title="Epoxy Transformer with Dimensions" width="500"
+                        height="500" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                        webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                        src="https://sketchfab.com/models/2d1e67715d15453996afa9cbea8ff6f5/embed"> </iframe>
+                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a
+                            href="https://sketchfab.com/3d-models/epoxy-transformer-with-dimensions-2d1e67715d15453996afa9cbea8ff6f5?utm_medium=embed&utm_campaign=share-popup&utm_content=2d1e67715d15453996afa9cbea8ff6f5"
+                            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Epoxy Transformer
+                            with
+                            Dimensions </a> by <a
+                            href="https://sketchfab.com/pranitmenkar24?utm_medium=embed&utm_campaign=share-popup&utm_content=2d1e67715d15453996afa9cbea8ff6f5"
+                            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> </a> <a
+                            href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=2d1e67715d15453996afa9cbea8ff6f5"
+                            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

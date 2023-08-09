@@ -1,0 +1,63 @@
+table,
+th,
+td {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  width: 400px;
+  background-color: #b8deff;
+  -webkit-print-color-adjust:exact ;
+  print-color-adjust:exact;
+}
+tr
+{
+  height: 20px;
+  
+}
+
+
+h1 {
+  margin-left: 240px;
+  font-size: 3rem;
+}
+
+h3 {
+  margin-left: 215px;
+  font-size: 1.5rem;
+}
+
+.table1
+{
+  width: 158mm;
+  font-size: 1.4rem ;
+  margin-left: 25mm;
+  
+}
+.table2
+{
+  font-size: 1.4rem;
+  margin-left: 25mm;
+  
+}
+.table2 tr
+{
+  height: 20mm;
+}
+.table2 td
+{
+  padding: 3mm;
+}
+
+
+.PageSize
+{
+  width: 210mm;
+  height: 297mm;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pointer-link {
+  cursor: pointer;
+}
