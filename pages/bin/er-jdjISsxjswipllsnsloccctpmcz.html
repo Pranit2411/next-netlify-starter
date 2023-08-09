@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error Prediction</title>
+    <style>
+        table,th,td
+        {
+          border:2px solid rgb(0, 0, 0);
+        }
+        table
+        {
+          margin-top: 40px;
+          margin-left: 250px;
+          width:40%;
+        }
+        td
+        {
+          height:40px;
+          text-align: center;
+        }
+        tr
+        {
+          background-color:rgb(255, 255, 255);
+          color:rgb(0, 0, 0);
+        }
+        th
+        {
+          background-color:yellow;
+          color:black;
+        }
+      </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>For</th>
+            <th>RatioError</th>
+            <th>PhaseError</th>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=120%</td>
+            <td>-0.0356</td>
+            <td>0.4901</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=100%</td>
+            <td>-0.0342</td>
+            <td>0.2488</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=20%</td>
+            <td>-0.0.0395</td>
+            <td>0.4569</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=5%</td>
+            <td>-0.0420</td>
+            <td>0.7550</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=1%</td>
+            <td>-0.0670</td>
+            <td>-2.4590</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=120%</td>
+            <td>0.0085</td>
+            <td>0.0922</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=100%</td>
+            <td>0.1162</td>
+            <td>0.2232</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=20%</td>
+            <td>0.0265</td>
+            <td>-0.4822</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=5%</td>
+            <td>0.0270</td>
+            <td>-2.6788</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=1%</td>
+            <td>0.0058</td>
+            <td>-4.7010</td>
+        </tr>
+    </table>
+    <!-- <script>
+        window.onload= setTimeout(waitLoad, 3000);
+
+        function waitLoad(){
+        alert("Loaded!")
+        };
+    </script> -->
+</body>
+
+</html>

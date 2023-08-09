@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<nav class="navbar">
 		<div class="navbar__container">
 			<!--Anchor Tags -->
-			<a value="ASSIGN" onclick="location.assign('PHP_HomePage.php')" id="navbar__logo"><Strong><em>Transformer<span1>Go</span1></em></Strong></a>
+			<a value="ASSIGN" onclick="location.assign('Index.html')" id="navbar__logo"><Strong><em>Transformer<span1>Go</span1></em></Strong></a>
 			<div class="navbar__toggle" id="mobile-menu">
 				<span class="bar"></span>
 				<span class="bar"></span>

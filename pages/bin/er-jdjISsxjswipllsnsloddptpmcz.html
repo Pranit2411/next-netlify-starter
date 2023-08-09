@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error Prediction</title>
+    <style>
+        table,th,td
+        {
+          border:2px solid rgb(0, 0, 0);
+        }
+        table
+        {
+          margin-top: 40px;
+          margin-left: 250px;
+          width:40%;
+        }
+        td
+        {
+          height:40px;
+          text-align: center;
+        }
+        tr
+        {
+          background-color:rgb(255, 255, 255);
+          color:rgb(0, 0, 0);
+        }
+        th
+        {
+          background-color:yellow;
+          color:black;
+        }
+      </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>For</th>
+            <th>RatioError</th>
+            <th>PhaseError</th>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=120%</td>
+            <td>-0.0299</td>
+            <td>12.6011</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=100%</td>
+            <td>-0.1683</td>
+            <td>7.9912</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=80%</td>
+            <td>-0.1669</td>
+            <td>5.5011</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=120%</td>
+            <td>0.2843</td>
+            <td>8.8299</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=100%</td>
+            <td>0.3251</td>
+            <td>3.9481</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=80%</td>
+            <td>0.4301</td>
+            <td>1.1200</td>
+        </tr>
+    </table>
+</body>
+
+</html>

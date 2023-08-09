@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error Prediction</title>
+    <style>
+        table,th,td
+        {
+          border:2px solid rgb(0, 0, 0);
+        }
+        table
+        {
+          margin-top: 40px;
+          margin-left: 250px;
+          width:40%;
+        }
+        td
+        {
+          height:40px;
+          text-align: center;
+        }
+        tr
+        {
+          background-color:rgb(255, 255, 255);
+          color:rgb(0, 0, 0);
+        }
+        th
+        {
+          background-color:yellow;
+          color:black;
+        }
+      </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>For</th>
+            <th>RatioError</th>
+            <th>PhaseError</th>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=120%</td>
+            <td>-0.0774</td>
+            <td>1.3980</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=100%</td>
+            <td>-0.0348</td>
+            <td>0.1620</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=20%</td>
+            <td>-0.0398</td>
+            <td>0.0345</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=5%</td>
+            <td>-0.0501</td>
+            <td>-0.6671</td>
+        </tr>
+        <tr>
+            <td>Burden=100, PrimaryCurrent=1%</td>
+            <td>-0.0853</td>
+            <td>-2.357</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=120%</td>
+            <td>0.0034</td>
+            <td>-0.4432</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=100%</td>
+            <td>0.0040</td>
+            <td>0.1371</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=20%</td>
+            <td>0.0213</td>
+            <td>-0.3142</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=5%</td>
+            <td>0.0213</td>
+            <td>-2.342</td>
+        </tr>
+        <tr>
+            <td>Burden=25, PrimaryCurrent=1%</td>
+            <td>0.0090</td>
+            <td>-4.4869</td>
+        </tr>
+    </table>
+</body>
+
+</html>
